@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Card</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--Font för title-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-color: lightgrey;
+    }
+    
+    #navigatebar {
+        height: 50px;
+        width: 100px;
+        color: blue;
+    }
+    
+    .book-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        margin-top: 100px;
+    }
+    
+    #category-select {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    #navigation_bar {
+        background-color: darkgray;
+        height: 70px;
+    }
+    
+    ul#navbar {
+        padding: 45px;
+    }
+    
+    .nav_options {
+        display: inline;
+        margin: 15px;
+        padding: 7px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    h3 {
+        position: absolute;
+        margin-left: 5px;
+        font-family: 'Playfair Display', serif;
+    }
+    
+    h2 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 500px;
+    }
+    
+    ._lists {
+        margin-left: 90px;
+        margin-top: -39px;
+    }
+    
+    ._home {
+        margin-left: 10px;
+    }
+    
+    ._about {
+        margin-left: 200px;
+        margin-top: -39px;
+    }
+    
+    .form_ {
+        margin-top: -105px;
+        margin-left: 1330px;
+    }
+    
+    .text_inform {
+        margin-left: -100px;
+        margin-top: -26px;
+    }
+    
+    .random_p {
+        font-size: 0.9em;
+        text-shadow: 4px 4px 5px grey;
+        text-align: left;
+        line-height: 1.8;
+        margin-left: 25px;
+    }
+</style>
+
+<body>
+    <div id="navigation_bar">
+        <!--Navigation bar-->
+        <strong><h3>Full Review of Best Selling Books</h3></strong>
+
+        <ul id="navbar">
+            <li class="nav_options">
+                <a href="#">
+                    Home
+                </a>
+            </li>
+            <li class="nav_options">
+                <a href="#">
+                    Lists
+                </a>
+            </li>
+            <li class="nav_options">
+                <a href="#">
+                    About
+                </a>
+            </li>
+        </ul>
+
+        <form class="form_" role="search">
+            <!--Search bar för design, man kan inte search-->
+            <input class="formbar" type="search" aria-label="Search" placeholder="Search">
+            <p class="text_inform">Find Books: </p>
+        </form>
+    </div>
+
+    <h2>The Greatest Books This Decade</h2>
+    <hr>
+    <p class="random_p">Here you can discover a loads of books to your liking. There are several categories to choose from but it will only be the best selling ones in this site.Lorem ipsum dolor sit amet. 33 quia corporis eos ullam alias non sint dignissimos ea commodi
+        enim id quasi saepe! Aut voluptas quod ut cupiditate velit et enim quisquam? Sed omnis exercitationem cum vitae architecto et quibusdam adipisci et perferendis quas est velit repellat et rerum rem placeat facere. Rem provident ipsam a unde corrupti
+        id optio blanditiis sit molestiae consectetur ut voluptas optio aut quia dolores eos illo pariatur. Sed alias molestiae ut nihil magni sit quas illum qui quod molestias et praesentium sequi qui eaque ipsum.Et error aperiam ea quis neque qui fugiat
+        rerum id atque voluptatum ut eaque quia et culpa. Ut nihil dolorem nam excepturi maiores qui nihil dolor qui quam dignissimos sit harum omnis et cumque temporibus ut recusandae accusamus. Ea expedita harum et Quis molestias ut aliquam numquam
+        est perferendis magnam. </p>
+    <hr>
+    <div id="category">
+        <select id="category-select"> <!--Alla kategorier-->
+      <option value="" selected="" disabled="" hidden="">Choose Category</option>
+      <option value="combined-print-and-e-book-fiction">Combined Print &amp; E-Book Fiction</option>
+      <option value="combined-print-and-e-book-nonfiction">Combined Print &amp; E-Book Nonfiction</option>
+      <option value="hardcover-fiction">Hardcover Fiction</option>
+      <option value="hardcover-nonfiction">Hardcover Nonfiction</option>
+      <option value="trade-fiction-paperback">Paperback Trade Fiction</option>
+      <option value="paperback-nonfiction">Paperback Nonfiction</option>
+      <option value="advice-how-to-and-miscellaneous">Advice, How-To &amp; Miscellaneous</option>
+      <option value="childrens-middle-grade-hardcover">Children’s Middle Grade Hardcover</option>
+      <option value="picture-books">Children’s Picture Books</option>
+      <option value="series-books">Children’s Series</option>
+      <option value="young-adult-hardcover">Young Adult Hardcover</option>
+      <option value="audio-fiction">Audio Fiction</option>
+      <option value="audio-nonfiction">Audio Nonfiction</option>
+      <option value="business-books">Business</option>
+      <option value="graphic-books-and-manga">Graphic Books and Manga</option>
+      <option value="mass-market-monthly">Mass Market</option>
+      <option value="middle-grade-paperback-monthly">Middle Grade Paperback</option>
+      <option value="young-adult-paperback-monthly">Young Adult Paperback</option>
+    </select>
+
+        <div class="book-container"></div>
+    </div>
+
+
+</body>
+<script>
+    const api_key_nytimes = "G3m4wAkzkZ9EAwUM86xNNaEMm6jhPika";
+
+    var nytimes_api_result = {};
+
+    //Hämtar API:n
+    $.ajax({
+        async: false,
+        type: "GET",
+        url: `https://api.nytimes.com/svc/books/v3/lists/overview.json?api-key=${api_key_nytimes}`,
+
+        //Om den lyckas hämta API:n
+        success: function(data) {
+            data.results.lists.forEach(i => {
+                nytimes_api_result[i.list_name_encoded] = i;
+
+                $("#category-select").append($(`    
+                                        <option value="${i.list_name_encoded}">${i.display_name}</option>
+                                    `));
+            });
+        }
+
+    });
+
+    $("#category-select").change(function() { //funktion som ändrar kategorierna beroende på vad användaren väljer
+        i = nytimes_api_result[$(this).val()];
+
+        console.log(i);
+
+        $(".book-container").empty();
+
+        i.books.forEach(title => { //Söker igenom och skriver ut alla böcker och lägger in i html delen
+            $(".book-container").append(
+                $(`
+            <div class="card" style="width: 18rem; order:${i.books.indexOf(title)}; ">
+                <img src="${title.book_image}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">${title.title}</h5>
+                    <p class="card-text">${title.description}, .</p>
+                </div>
+            </div>
+   
+        `));
+        });
+    })
+</script>
+
+</html>
